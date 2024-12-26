@@ -1,0 +1,16 @@
+body{
+    background-color: darkblue;
+    color: white;
+    font-size: 20px;
+    font-family:fantasy
+}
+a{
+    color: yellow;
+}
+img{
+    max-width:40%;
+}
+img{
+    max-width: 40%;
+    max-height: 300px;
+}

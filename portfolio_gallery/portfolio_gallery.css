@@ -1,0 +1,205 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 110vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 20px;
+    
+}
+nav ul li {
+    display: inline-block;
+}
+nav a {
+    text-decoration: none;
+    color:black;
+    padding: 20px;
+}
+.mobile {
+    display: none;
+    background: white;
+    color: black;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 100px 100px 100px 100px 100px 100px 100px;
+    margin: 5px;
+    gap: 10px;
+    padding: 10px;
+    height: 100%;
+}
+
+.item1 {
+    background-image: url("NewYork.jpg");
+    background-size: cover;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 4 ;
+    background-position: center center;
+    ;
+    
+}
+.item2 {
+    background-image:  url("shibuya.jpg");
+    background-size: cover;
+    grid-column:3 / span 2 ;
+    grid-row: 1 / span 2 ;
+    background-position: center center;
+   
+}
+.item3 {
+    background-image:  url("owl_graffiti.jpg");
+    background-size:cover;
+    grid-column:3 / span 2 ;
+    grid-row: 3 / span 2 ;
+    background-position: center center;
+}
+.item4 {
+    background-image: url("beach.jpg");
+    background-size: cover;
+    grid-column:5 / span 2 ;
+    grid-row: 1 / span 5;
+    background-position: center center;
+}
+.item5 {
+    background-image:  url("pineapples.jpg");
+    background-size: cover;
+    grid-column: 1 / span 1;
+    grid-row:5 / span 1 ;
+    background-position: center center;
+}
+.item6 {
+    background-image:  url("rasberries.jpg");
+    background-size: cover;
+    grid-column: 1 / span 1 ;
+    grid-row: 6 / span 1;
+    background-position: center center;
+}
+.item7 {
+    background-image:  url("apples.jpg");
+    background-size: cover;
+    grid-column: 1 / span 1;
+    grid-row: 7 / span 1 ;
+    background-position: center center;
+}
+.item8 {
+    background-image:  url("forest.jpg");
+    background-size: cover;
+    grid-column: 2 / span 3;
+    grid-row: 5 / span 3 ;
+    background-position: center center;
+}
+.item9 {
+    background-image:  url("dancer.jpg");
+    background-size: cover;
+    grid-column: 5 / span 2 ;
+    grid-row: 6 / span 2;
+    background-position: center center;
+} /*
+.form {
+    text-align: center;
+    padding:20px;
+    background-color: black;
+    color:white;
+    
+
+    
+}
+h2 {
+    padding-bottom: 20px;
+}
+
+.form_group {
+    padding:10px;
+    border-radius: 5px;
+    text-align: center;
+} 
+.form_group input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    
+} 
+footer {
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 20px;
+}
+button {
+    background: rgb(255, 106, 0);
+    color:white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    width: 300px;
+}*/
+
+.formcontainer {
+    margin: 50px auto;
+    width: 300px;
+}
+
+.form-wrap {
+background: black;
+padding: 20px;
+border-radius: 5px;
+text-align: center;
+margin-bottom:20px;
+}
+
+.form-wrap h1{
+    margin-bottom: 20px;
+    color:white;
+}
+
+.form-group {
+   
+    margin: 20px 0;
+}
+
+.form-group label {
+    display: block;
+    text-align: left;
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 5px;
+}
+.form-group input {
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #a7a7a7;
+}
+.form-wrap button {
+    width: 80%;
+    background: coral;
+    color: white;
+    padding:10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+
+}
+
+.form-wrap button:hover{
+    background-color:rgb(238, 153, 123)
+}
+footer{
+    background: black;
+    color:white;
+    
+    
+}

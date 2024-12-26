@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: blanchedalmond;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #333;
+}
+
+header {
+    background: #333;
+    background-image:url("river.jpg") ;
+    background-size: 100%;
+    
+}
+ nav ul {
+    list-style-type: none;
+ }
+header li {
+    display: inline-block;
+    color:white
+
+}
+ul li a {
+    margin:20px;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+li a:hover{
+    color: aqua;
+}
+.banner {
+    text-align: center;
+    padding: 100px 0;
+
+}
+
+
+
+/* Main area*/
+
+
+section {
+    padding: 32px;
+}
+h1 {
+    margin-bottom: 35px;
+}
+
+
+img {
+    max-width: 60%;
+}
+
+/* Table*/
+
+table{
+    border-collapse: collapse;
+}
+
+th{
+    border-bottom: 3px solid white;
+}
+
+thead{
+    font-weight: bold;
+    background: orange;
+    color: white;
+}
+td, th{
+    text-align: left;
+    width: 200px;
+    border: 1px solid white;
+    padding: 15px;
+}
+.odd{
+    background: rgb(196, 109, 109);
+
+}
+
+
+/*Boxes*/
+
+.box {
+height: 200px;
+width: 200px;
+display: inline-block;
+margin: 35px;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5 {
+    background-color: coral;
+}
+
+.box1{
+    border: 7px dotted white;
+}
+
+.box2 {
+    border: 7px double white;
+}
+
+.box3 {
+    border-style: groove;
+    border-width: 10px;
+    border-color: green yellow blue red;
+}
+
+.box4 {
+    border: 5px dashed white;
+    border-radius: 25px;
+    background-image: url(river.jpg)
+}
+
+.box5{
+    border: 5px solid black;
+    border-radius: 50%;
+    
+}
+
+.Image {
+float: left;
+}
+

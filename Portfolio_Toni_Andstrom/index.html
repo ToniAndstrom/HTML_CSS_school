@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo">
+        <h1>Toni Andström</h1>
+      </div>
+
+      <nav>
+        <button class="mobile">
+          <span class="material-symbols-outlined"> menu </span>
+        </button>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#projectsH2">Projects</a></li>
+          <li><a href="#aboutMeH2">About me</a></li>
+          <li><a href="#skillsH2">Skills</a></li>
+          <li><a href="indexGallery.html#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact me</a></li>
+          <li><a href="https://www.bc.fi/">More about BCH</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1>Welcome to my portfolio</h1>
+      </div>
+    </div>
+    <div></div>
+    <h2 id="projectsH2">Projects</h2>
+    <section id="projects">
+      <div class="card">
+        <img src="mind.jpg" alt="A man in deep thought" style="width: 100%" />
+        <div>
+          <h3><b>Mind</b></h3>
+          <p>"The best cure for the body is a quiet mind"</p>
+          <a href="">read more</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="body.jpg"
+          alt="A man holding a static pose"
+          style="width: 100%"
+        />
+        <div>
+          <h3><b>Body</b></h3>
+          <p>"Pain is weakness leaving the body"</p>
+          <a href="">read more</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="soul.jpg" alt="a beautiful scenery" style="width: 100%" />
+        <div>
+          <h3><b>Soul</b></h3>
+          <p>"The soul becomes dyed by the color of its thoughts"</p>
+          <a href="">read more</a>
+        </div>
+      </div>
+    </section>
+
+    <h2 id="aboutMeH2">About Me</h2>
+    <section id="aboutMe">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse cumque,
+        cupiditate quisquam voluptatum ex quod voluptas perspiciatis laboriosam
+        autem nemo doloribus at ea voluptatibus laborum tempora fugiat? Fugit,
+        sit quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Laborum dolorum quisquam alias ab recusandae at nobis ipsum earum!
+        Ullam, vel dicta ipsum nobis ea amet ipsa quo tempora hic minima! Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Sit incidunt tempora
+        illum id sapiente at, dignissimos error velit sint exercitationem
+        asperiores optio quas assumenda veniam voluptates debitis esse ad
+        aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Obcaecati eligendi illum vero eius in quaerat quasi deleniti debitis
+        aperiam, modi totam pariatur maxime, ut expedita error! Recusandae enim
+        aliquam ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Libero quam tempore molestias saepe consectetur earum possimus placeat
+        praesentium delectus aliquam, tenetur voluptas neque doloremque eius,
+        voluptatibus, blanditiis modi aspernatur obcaecati! Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Labore, vel culpa? Animi expedita
+        voluptatem qui sapiente adipisci excepturi dolor laudantium, esse
+        necessitatibus! Vel ipsam, modi veritatis blanditiis eaque accusantium
+        error.
+      </p>
+
+      <img src="spice.jpg" alt="a picture of different spices" />
+    </section>
+
+    <h2 id="skillsH2">Skills</h2>
+    <section id="skills">
+      <div class="box">
+        <span class="material-symbols-outlined">html</span>
+        <p>HTML</p>
+        <progress id="heat" value="70" max="100"></progress>
+      </div>
+
+      <div class="box">
+        <span class="material-symbols-outlined">php</span>
+        <p>PHP</p>
+        <progress id="genetics" value="30" max="100"></progress>
+      </div>
+
+      <div class="box">
+        <span class="material-symbols-outlined">javascript</span>
+        <p>Javascript</p>
+        <progress id="person" value="50" max="100"></progress>
+      </div>
+
+      <div class="box">
+        <span class="material-symbols-outlined">css</span>
+        <p>CSS</p>
+        <progress id="handshake" value="80" max="100"></progress>
+      </div>
+    </section>
+    <footer>
+      <div id="contact" class="container">
+        <div class="form-wrap">
+          <h1>Contact me</h1>
+
+          <form>
+            <div class="form-group">
+              <label for="yourName">Your name</label>
+              <input type="text" name="yourName" id="yourName" />
+            </div>
+
+            <div class="form-group">
+              <label for="yourE-mail">Your e-mail</label>
+              <input type="text" name="yourE-mail" id="yourE-mail" />
+            </div>
+
+            <div class="form-group">
+              <label for="textarea">Message to me</label>
+              <textarea
+                name="textarea"
+                id="textarea"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+
+            <button type="submit">Send message</button>
+            <p>copyright &#169; Toni Andström 2024</p>
+          </form>
+          <button id="backToTop">Back to top</button>
+        </div>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

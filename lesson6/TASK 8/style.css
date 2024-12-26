@@ -1,0 +1,93 @@
+:root {
+    --primary-color: skyblue;
+    --font: 'Times New Roman', Times, serif;
+    --blue-color: rgb(67, 135, 199);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--primary-color);
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.one {
+    display: grid;
+    max-width: 1000px;
+    background-color: #b3b3b3;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 100px 100px 100px;
+    gap: 1rem;
+    margin: 50px auto;
+}
+
+.item {
+    background: white;
+}
+
+.item:first-child {
+background: green;
+grid-column: 1 / span 4;
+}
+
+.item1 {
+    background: var(--blue-color);
+    grid-row: 2 / span 2;
+    grid-column: 1 / span 1;
+}
+
+.item:last-child {
+    background: yellow;
+    grid-column: 1 / span 4;
+}
+
+.two {
+    display: grid;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 0.4rem;
+    grid-auto-rows:  1fr;
+    grid-template-areas: 
+    "top top top top"
+    "left content content right"
+    "left content content right"
+    "left content content right"
+    "bottom bottom bottom bottom"
+}
+
+.header {
+    grid-area: top;
+    background: green;
+    padding: 1rem;
+    min-height: 100px;
+}
+
+.left {
+    grid-area: left;
+    background: var(--blue-color);
+    padding: 1rem;
+
+}
+
+.main {
+    grid-area: content;
+    background: pink;
+    padding: 1rem;
+}
+
+.aside {
+    grid-area: right;
+    background: yellow;
+    padding: 1rem;
+}
+
+.footer {
+    grid-area: bottom;
+    background: red;
+    padding: 1rem;
+}

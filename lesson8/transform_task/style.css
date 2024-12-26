@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+background: linear-gradient(
+    -45deg,
+    #ee7752,
+    #e73c7e,
+    #23a6d5,
+    #23d5ab
+);
+background-size: 400%;
+animation: gradient 15s ease infinite;
+height: 100vh;
+font-family: "Spartan", sans-serif;
+margin:3rem;
+}
+@keyframes gradient{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+.fifth-task{
+    background: goldenrod;
+    height: 200px;
+    width:200px ;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+.fifth-task h3{
+    padding: 25px;
+    text-align: center;
+    
+    
+}
+/* Left Side*/
+
+.fifth-task h3::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom: 200px;
+    border-left: 3px solid #fc5185;
+    transition: all 1s;
+}
+.fifth-task:hover h3::before{
+    bottom:0;
+}
+
+/* Right side*/
+
+.fifth-task h3::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top:200px;
+    right:0;
+    bottom: 0;
+    border-right: 3px solid #fc5185;
+    transition: all 1s;
+}
+.fifth-task:hover h3::after{
+    top:0;
+}
+/*Top*/
+
+.fifth-task::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:200px;
+    border-top: 3px solid #fc5185;
+    transition: all 1s;
+}
+.fifth-task:hover::before{
+    right:0;
+}
+/*bottom side*/
+
+.fifth-task::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top:0;
+    left:200px;
+    bottom: 0;
+    right: 0;
+    border-bottom: 3px solid #fc5185;
+    transition: all 1s;
+}
+.fifth-task:hover::after{
+    left:0;
+}

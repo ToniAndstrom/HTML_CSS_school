@@ -1,0 +1,337 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    overscroll-behavior: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 20px;
+    position:fixed;
+    background: transparent;
+    color: black;
+    width: 100%
+}
+
+nav ul li {
+    display: inline-block;
+}
+nav a {
+    text-decoration: none;
+    color:black;
+    padding: 20px;
+}
+
+.mobile {
+    display: none;
+    background: rgb(255, 119, 0);
+    color: white;
+    border: none;
+    padding: 20px;
+    border-radius: 5px;
+}
+.mobile:hover {
+    background: rgb(238, 153, 123);
+}
+body {
+    height: 110vh;
+}
+    .gallery {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 100px 100px 100px 100px 100px 100px 100px;
+    margin: 5px;
+    gap: 10px;
+    padding: 10px;
+    height: 100%;
+}
+
+.item1 {
+    background-image: url("NewYork.jpg");
+    background-size: cover;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 4 ;
+    background-position: center center;
+    ;
+    
+}
+.item2 {
+    background-image:  url("shibuya.jpg");
+    background-size: cover;
+    grid-column:3 / span 2 ;
+    grid-row: 1 / span 2 ;
+    background-position: center center;
+   
+}
+.item3 {
+    background-image:  url("owl_graffiti.jpg");
+    background-size:cover;
+    grid-column:3 / span 2 ;
+    grid-row: 3 / span 2 ;
+    background-position: center center;
+}
+.item4 {
+    background-image: url("beach.jpg");
+    background-size: cover;
+    grid-column:5 / span 2 ;
+    grid-row: 1 / span 5;
+    background-position: center center;
+}
+.item5 {
+    background-image:  url("pineapples.jpg");
+    background-size: cover;
+    grid-column: 1 / span 1;
+    grid-row:5 / span 1 ;
+    background-position: center center;
+}
+.item6 {
+    background-image:  url("rasberries.jpg");
+    background-size: cover;
+    grid-column: 1 / span 1 ;
+    grid-row: 6 / span 1;
+    background-position: center center;
+}
+.item7 {
+    background-image:  url("apples.jpg");
+    background-size: cover;
+    grid-column: 1 / span 1;
+    grid-row: 7 / span 1 ;
+    background-position: center center;
+}
+.item8 {
+    background-image:  url("forest.jpg");
+    background-size: cover;
+    grid-column: 2 / span 3;
+    grid-row: 5 / span 3 ;
+    background-position: center center;
+}
+.item9 {
+    background-image:  url("dancer.jpg");
+    background-size: cover;
+    grid-column: 5 / span 2 ;
+    grid-row: 6 / span 2;
+    background-position: center center;
+}
+Img {
+    max-height: 20rem;
+    max-width: 20rem;
+    
+}
+
+.hero-image {
+    
+    background-image:url(colors.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 80%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+}
+
+.hero-text {
+    color: black;
+    text-align: center;
+    padding:20px;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+}
+
+#projectsH2, #aboutMeH2, #skillsH2, #contact, #gallery {
+    scroll-margin-top: 6rem;
+}
+#projects {
+    display: flex;
+    justify-content: center;
+}
+h2 {
+    padding:20px;
+}
+h3{
+    padding:20px;
+}
+#projects p{
+   margin-bottom: 10px;
+}
+.card{
+    min-width: 25vw;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    border: solid lightgray;
+    margin: 20px;
+   
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 119, 0);
+}
+#aboutMe img {
+    display: flex;
+    padding:20px;
+}
+#aboutMe p{
+    padding:20px;
+}
+#aboutMe {
+    background: rgb(255, 119, 0);
+    display: flex;
+    padding: 1rem;
+}
+#aboutMeH2 {
+    background: rgb(255, 119, 0);
+}
+
+#skills {
+    display: flex;
+    margin:20px;
+}
+
+.box {
+    height: 15rem;
+    width: 10rem;
+    margin: 10px;
+    text-align: center;
+    background: lightgray;
+    flex:1;
+    
+}
+#skills .box p {
+    padding-top: 30px;
+    font-size: 25px;
+
+}
+
+#skills span {
+    padding-top: 30px;
+    font-size: 50px;
+    
+}
+
+progress {
+    height: 40px;
+    border-radius:50px;
+    color:black;
+
+}
+
+progress::-webkit-progress-bar {
+background:white;
+}
+
+progress::-webkit-progress-value {
+    background: rgb(255, 119, 0);
+}
+.container {
+    margin: 50px auto;
+    width: 300px;
+}
+
+.form-wrap {
+background: black;
+padding: 20px;
+border-radius: 5px;
+text-align: center;
+margin-bottom: 20px;
+}
+
+.form-wrap h1{
+    margin-bottom: 20px;
+    color:white;
+}
+
+.form-group {
+   
+    margin: 20px 0;
+}
+
+.form-group label {
+    display: block;
+    text-align: left;
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 5px;
+}
+.form-group input {
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #a7a7a7;
+}
+.form-wrap button {
+    width: 80%;
+    background: rgb(255, 119, 0);
+    color: white;
+    padding:10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: inherit;
+
+}
+
+.form-wrap button:hover{
+    background-color:rgb(238, 153, 123)
+}
+footer{
+    background: black;
+    color:white;
+    
+}
+#backToTop {
+    width: 100px;
+    position: fixed;
+    bottom:1rem;
+    right:3rem;
+    display: none;
+}
+.bg {
+    background: whitesmoke;
+}
+   
+
+@media (max-width: 600px){
+    nav ul {
+        display: none;
+    }
+    ul.responsive {
+        display: block;
+        background-color: whitesmoke;
+        color: #333;
+        position: absolute;
+        left: 0;
+        width: 100%;
+    }
+    ul.responsive li{
+        display: block;
+        margin: 2rem 1rem;
+    }
+    .mobile{
+    display: block;
+    }
+   
+   
+   #projects {
+    flex-direction: column;
+    align-items: center;
+   }
+   
+   #skills{
+    flex-direction: column;
+    align-items: center;
+   }
+   #aboutMe{
+    flex-direction: column;
+   }
+}
